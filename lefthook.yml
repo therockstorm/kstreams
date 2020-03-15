@@ -1,0 +1,7 @@
+pre-commit:
+  parallel: true
+  commands:
+    compile:
+      run: sbt '; set scalacOptions += "-Werror"; compile:compile; test:compile;'
+    format:
+      run: sbt scalafmtAll

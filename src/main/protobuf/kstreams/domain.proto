@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package rocky.protobuf.core;
+
+option java_multiple_files = true;
+option java_outer_classname = "DomainProto";
+option java_package = "dev.rocky.protobuf.kstreams";
+
+message Event1 {
+    string a = 1;
+}
+
+message Event2 {
+    string b = 1;
+}

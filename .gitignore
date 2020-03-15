@@ -1,0 +1,7 @@
+target/
+src_managed/
+.idea/
+
+.DS_Store
+.lefthook.sh
+.scala*-common.conf

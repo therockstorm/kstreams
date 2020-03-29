@@ -6,6 +6,8 @@ lazy val root = (project in file("."))
   .settings(
     coverageExcludedPackages := "<empty>;dev.rocky.kstreams.Main.scala",
     libraryDependencies ++= Seq(
+      akkaStream,
+      akkaStreamKafka,
       configLib,
       kafkaStreamsScala,
       scalaPbRuntime

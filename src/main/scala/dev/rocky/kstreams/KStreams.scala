@@ -17,7 +17,7 @@ import org.apache.kafka.streams.scala.Serdes._
 import org.apache.kafka.streams.scala.StreamsBuilder
 import org.apache.kafka.streams.scala.kstream.Produced
 
-object Main extends App {
+object KStreams extends App {
   private val config = ConfigFactory.load()
   private val name = config.getString("name")
   implicit private val event1Serde: Serde[Event1] = new ProtobufSerde[Event1](Event1.fromAscii)
